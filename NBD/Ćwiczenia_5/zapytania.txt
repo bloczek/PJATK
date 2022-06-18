@@ -1,0 +1,61 @@
+docker run --name=riak -d -p 8087:8087 -p 8098:8098 basho/riak-kv
+
+
+1) 
+
+curl -v -i -XPUT http://172.17.0.2:8098/buckets/s25750/keys/dane1 -H "Content-Type: application/json" -d '{"name": "Kendrick","surname": "Lamar","year": 1987 ,"weight": 69.4}'
+
+curl -v -i -XPUT http://172.17.0.2:8098/buckets/s25750/keys/dane2 -H "Content-Type: application/json" -d '{"name": "Tyler","surname": "Creator","year": 1986 ,"weight": 82.1}'
+
+curl -v -i -XPUT http://172.17.0.2:8098/buckets/s25750/keys/dane3 -H "Content-Type: application/json" -d '{"name": "Childish","surname": "Gambino","year": 1982 ,"weight": 71.3}'
+
+curl -v -i -XPUT http://172.17.0.2:8098/buckets/s25750/keys/dane4 -H "Content-Type: application/json" -d '{"name": "John","surname": "Bonham","year": 1948 ,"weight": 84.4}'
+
+curl -v -i -XPUT http://172.17.0.2:8098/buckets/s25750/keys/dane5 -H "Content-Type: application/json" -d '{"name": "Jimmy","surname": "Page","year": 1944 ,"weight": 90.4}'
+
+
+
+2) 
+
+curl -v -i http://172.17.0.2:8098/buckets/s25750/keys/dane5
+
+
+3)
+
+curl -v -i -XPUT http://172.17.0.2:8098/buckets/s25750/keys/dane4 -H "Content-Type: application/json" -d '{"1": "John","2": "Bonham","3": 1948 ,"4": 84.4,"5":"Led Zeppelin"}'
+
+
+4)
+
+curl -v -i -XPUT http://172.17.0.2:8098/buckets/s25750/keys/dane2 -H "Content-Type: application/json" -d '{"1": "Tyler","2": "Creator","3": 1986 }'
+
+
+5)
+
+curl -v -i -XPUT http://172.17.0.2:8098/buckets/s25750/keys/dane1 -H "Content-Type: application/json" -d '{"1": "Kendrick","2": "Lamar","3": 1987 ,"4": 89.4}'
+
+
+6)
+
+curl -v -i -XDELETE http://172.17.0.2:8098/buckets/s25750/keys/dane3
+
+
+7)
+
+curl -v -i http://172.17.0.2:8098/buckets/s25750/keys/dane3
+
+
+8)
+
+
+curl -v -i -XPOST http://172.17.0.2:8098/buckets/s25750/keys/ -H "Content-Type: application/json" -d '{"name": "Robert"}'
+
+
+9)
+
+curl -v -i http://172.17.0.2:8098/buckets/s25750/keys/Kwz73jUCHvn0CuVnCjV4LuewZbr
+
+
+10)
+
+curl -v -i -XDELETE http://172.17.0.2:8098/buckets/s25750/keys/Kwz73jUCHvn0CuVnCjV4LuewZbr

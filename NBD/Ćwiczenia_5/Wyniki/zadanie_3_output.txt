@@ -1,0 +1,24 @@
+* Hostname was NOT found in DNS cache
+*   Trying 172.17.0.2...
+* Connected to 172.17.0.2 (172.17.0.2) port 8098 (#0)
+> PUT /buckets/s25750/keys/dane4 HTTP/1.1
+> User-Agent: curl/7.35.0
+> Host: 172.17.0.2:8098
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 67
+>
+* upload completely sent off: 67 out of 67 bytes
+< HTTP/1.1 204 No Content
+HTTP/1.1 204 No Content
+< Vary: Accept-Encoding
+Vary: Accept-Encoding
+* Server MochiWeb/1.1 WebMachine/1.10.9 (cafe not found) is not blacklisted
+< Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+< Date: Sat, 18 Jun 2022 14:18:48 GMT
+Date: Sat, 18 Jun 2022 14:18:48 GMT
+< Content-Type: application/json
+Content-Type: application/json
+< Content-Length: 0
+Content-Length: 0

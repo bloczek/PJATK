@@ -1,0 +1,19 @@
+* Hostname was NOT found in DNS cache
+*   Trying 172.17.0.2...
+* Connected to 172.17.0.2 (172.17.0.2) port 8098 (#0)
+> GET /buckets/s25750/keys/dane3 HTTP/1.1
+> User-Agent: curl/7.35.0
+> Host: 172.17.0.2:8098
+> Accept: */*
+>
+< HTTP/1.1 404 Object Not Found
+HTTP/1.1 404 Object Not Found
+* Server MochiWeb/1.1 WebMachine/1.10.9 (cafe not found) is not blacklisted
+< Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+< Date: Sat, 18 Jun 2022 14:21:50 GMT
+Date: Sat, 18 Jun 2022 14:21:50 GMT
+< Content-Type: text/plain
+Content-Type: text/plain
+< Content-Length: 10
+Content-Length: 10

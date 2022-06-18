@@ -1,0 +1,33 @@
+* Hostname was NOT found in DNS cache
+*   Trying 172.17.0.2...
+* Connected to 172.17.0.2 (172.17.0.2) port 8098 (#0)
+> GET /buckets/s25750/keys/Kwz73jUCHvn0CuVnCjV4LuewZbr HTTP/1.1
+> User-Agent: curl/7.35.0
+> Host: 172.17.0.2:8098
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+HTTP/1.1 200 OK
+< X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvr9hpnWPgWGOYwZTImMeK8P0aKU7fFkA
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvr9hpnWPgWGOYwZTImMeK8P0aKU7fFkA
+< Vary: Accept-Encoding
+Vary: Accept-Encoding
+* Server MochiWeb/1.1 WebMachine/1.10.9 (cafe not found) is not blacklisted
+< Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+< Link: </buckets/s25750>; rel="up"
+Link: </buckets/s25750>; rel="up"
+< Last-Modified: Sat, 18 Jun 2022 14:22:15 GMT
+Last-Modified: Sat, 18 Jun 2022 14:22:15 GMT
+< ETag: "3GUJoihegtIVLpQrAZFwCq"
+ETag: "3GUJoihegtIVLpQrAZFwCq"
+< Date: Sat, 18 Jun 2022 14:22:56 GMT
+Date: Sat, 18 Jun 2022 14:22:56 GMT
+< Content-Type: application/json
+Content-Type: application/json
+< Content-Length: 18
+Content-Length: 18
+
+<
+* Connection #0 to host 172.17.0.2 left intact
+{"name": "Robert"}

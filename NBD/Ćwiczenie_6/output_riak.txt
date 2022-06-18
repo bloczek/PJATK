@@ -1,0 +1,4 @@
+(venv) C:\Users\a5h3k\Desktop\Wszystko i nic\STUDIA\Sem2\NBD\Zadanie_6>python main.py
+b'{"name": "Jakub", "surname": "Matuszewski", "year": 1, "grade": 4}'
+b'{"name": "Jakub", "surname": "Matuszewski", "year": 1, "grade": 5}'
+<riak.riak_object.RiakObject object at 0x000002AA3A6A44F0>

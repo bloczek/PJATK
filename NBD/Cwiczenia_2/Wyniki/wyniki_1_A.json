@@ -1,0 +1,16 @@
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("da1045aa-ec57-4048-9f12-0866393b8648") }
+MongoDB server version: 5.0.6
+[
+	{
+		"_id" : "Female",
+		"avg_height" : 166.81260913705583,
+		"avg_weight" : 70.11331573604062
+	},
+	{
+		"_id" : "Male",
+		"avg_height" : 166.7346950726979,
+		"avg_weight" : 70.00976575121163
+	}
+]

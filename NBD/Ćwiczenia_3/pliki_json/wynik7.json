@@ -1,0 +1,93 @@
+﻿[
+  {
+    "n": {
+"identity": 45,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"born": 1957,
+"name": "Cameron Crowe"
+      }
+    },
+    "m": {
+"identity": 37,
+"labels": [
+        "Movie"
+      ],
+"properties": {
+"tagline": "The rest of his life begins now.",
+"title": "Jerry Maguire",
+"released": 2000
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 5,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"born": 1967,
+"name": "Lilly Wachowski"
+      }
+    },
+    "m": {
+"identity": 121,
+"labels": [
+        "Movie"
+      ],
+"properties": {
+"tagline": "Speed has no limits",
+"title": "Speed Racer",
+"released": 2008
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 6,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"born": 1965,
+"name": "Lana Wachowski"
+      }
+    },
+    "m": {
+"identity": 121,
+"labels": [
+        "Movie"
+      ],
+"properties": {
+"tagline": "Speed has no limits",
+"title": "Speed Racer",
+"released": 2008
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 156,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"born": 1949,
+"name": "Nancy Meyers"
+      }
+    },
+    "m": {
+"identity": 154,
+"labels": [
+        "Movie"
+      ],
+"properties": {
+"title": "Something's Gotta Give",
+"released": 2003
+      }
+    }
+  }
+]

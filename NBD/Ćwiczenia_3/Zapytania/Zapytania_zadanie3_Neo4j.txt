@@ -1,0 +1,34 @@
+1. MATCH (n:Movie) RETURN n
+
+2. MATCH (n:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(m:Movie) RETURN m
+
+3. MATCH (n:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(m:Movie)<-[:DIRECTED]-(p) RETURN p
+
+4. MATCH (n:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(m:Movie)<-[:ACTED_IN]-(p:Person) RETURN p
+
+5. MATCH (n:Person)-[:ACTED_IN]->(m:Movie {title:"The Matrix"}),(n:Person)-[:ACTED_IN]->(p:Movie) RETURN p
+
+6. MATCH (n:Person)-[:ACTED_IN]->(m:Movie) with n, count(m) as num_movies where num_movies > 0 RETURN n,num_movies
+
+7. MATCH (n:Person)-[:DIRECTED]->(m:Movie)<-[:WROTE]-(n) RETURN n,m
+
+8. MATCH (n:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(m:Movie)<-[:ACTED_IN]-(p:Person {name: "Keanu Reeves"}) RETURN m
+
+9. 
+
+CREATE (Captain_America:Movie {title:'Captain America: The First Avenger', released:2011})
+CREATE (Steve_Rogers:Person {name:'Chris Evans', born:1981})
+CREATE (Peggy:Person {name:'Hayley Atwell', born:1982})
+CREATE (Bucky:Person {name:'Sebastian Stan', born:1982})
+CREATE (Direct:Person {name:'Joe Johnston', born:1950})
+CREATE (Screenwriter_1:Person {name:'Christopher Markus', born:1970})
+CREATE (Screenwriter_2:Person {name:'Stephen McFeely', born:1970})
+
+CREATE (Steve_Rogers)-[:ACTED_IN {roles:['Captain America']}]->(Captain_America),
+(Peggy)-[:ACTED_IN {roles:['Peggy Carter']}]->(Captain_America),
+(Bucky)-[:ACTED_IN {roles:['Winter Soldier']}]->(Captain_America),
+(Direct)-[:DIRECTED]->(Captain_America),
+(Screenwriter_1)-[:WROTE]->(Captain_America),
+(Screenwriter_2)-[:WROTE]->(Captain_America)
+
+MATCH (n:Movie{title:'Captain America: The First Avenger'})--(m:Person) RETURN n,m

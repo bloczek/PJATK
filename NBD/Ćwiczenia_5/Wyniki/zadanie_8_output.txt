@@ -1,0 +1,26 @@
+* Hostname was NOT found in DNS cache
+*   Trying 172.17.0.2...
+* Connected to 172.17.0.2 (172.17.0.2) port 8098 (#0)
+> POST /buckets/s25750/keys/ HTTP/1.1
+> User-Agent: curl/7.35.0
+> Host: 172.17.0.2:8098
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 18
+>
+* upload completely sent off: 18 out of 18 bytes
+< HTTP/1.1 201 Created
+HTTP/1.1 201 Created
+< Vary: Accept-Encoding
+Vary: Accept-Encoding
+* Server MochiWeb/1.1 WebMachine/1.10.9 (cafe not found) is not blacklisted
+< Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+< Location: /buckets/s25750/keys/Kwz73jUCHvn0CuVnCjV4LuewZbr
+Location: /buckets/s25750/keys/Kwz73jUCHvn0CuVnCjV4LuewZbr
+< Date: Sat, 18 Jun 2022 14:22:15 GMT
+Date: Sat, 18 Jun 2022 14:22:15 GMT
+< Content-Type: application/json
+Content-Type: application/json
+< Content-Length: 0
+Content-Length: 0
