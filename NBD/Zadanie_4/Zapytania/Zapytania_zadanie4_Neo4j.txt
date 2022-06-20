@@ -1,0 +1,23 @@
+1)
+
+MATCH s=shortestPath((x:town{name:"Darjeeling"})-[*]-(y:peak{name:"Sandakphu"})) RETURN s
+
+2)
+
+MATCH (x:town {name: "Darjeeling"}), (y:peak {name: "Sandakphu"}) MATCH s = allShortestPaths((x)-[*]->(y)) WHERE ALL (z IN relationships(s) WHERE z.winter = 'true') RETURN s
+
+3)
+
+MATCH (x:town {name: 'Darjeeling'}), (y:peak {name: 'Sandakphu'}) MATCH d = ((x)-[r*]->(y)) RETURN d, REDUCE(x = 0, k IN r | x + k.distance) as dist ORDER BY dist
+
+
+4)
+
+MATCH (x:town{name:'Darjeeling'})-[r:twowheeler*{summer:'true'}]->(y) return distinct(y.name)
+
+5)
+
+MATCH (x:Flight)-[:ORIGIN]->(y:Airport)
+WITH y, count(x) as ilosc
+RETURN y, ilosc
+ORDER BY ilosc desc

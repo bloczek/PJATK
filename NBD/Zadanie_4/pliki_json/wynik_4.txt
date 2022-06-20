@@ -1,0 +1,6 @@
+Server version	Neo4j/4.4.7
+Server address	localhost:7687
+Query	MATCH (x:town{name:'Darjeeling'})-[r:twowheeler*{summer:'true'}]->(y) return distinct(y.name)
+Summary	{, "query": {, "text": "MATCH (x:town{name:'Darjeeling'})-[r:twowheeler*{summer:'true'}]->(y) return distinct(y.name)", ...
+Response	
+[]
